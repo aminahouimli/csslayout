@@ -4,49 +4,58 @@
         <meta name="author" content="amina houimli" > 
         <meta name="key" content="width=device-width, initial-scale=1">
         <meta name="view port"content= "width = device-width,initial scale =1.0">
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        <link rel="stylesheet" type="text/css" href="css/resolution.css"/>
         <title>Docplanner Group</title>
     </head>
     <body>
+        <style type="text/css"></style>
         <header>
      <nav class="main-header">
     <div class="logo-docplanner">
     <h1>
-    <a href="/"><img src="res\logo-default-group-.svg" width="224" height="43" alt="Docplanner Group"/>
+    <a href="/"><img class="logo"src="res\logo-default-group-.svg" width="224" height="43" alt="Docplanner Group"/>
       </a>
     </h1>
+    <button type="button" class="hamburger">
+        <span> class=<hamburger-box>
+            <span class="hamburger-header"></span>
+        </span>
+    </button>
+ <nav class="main-nav">
       <ul class="main-menu">
-         <li><a href="#">About us</a></li>
-         <li><a href="#" >Career</a></li>
+         <li><a href="/about-us"class="is-current">About us</a></li>
+         <li><a href="carrer.html" >Career</a></li>
          <li class="dropdown">
-            <a >
-                Departments<br/>
+            <a href="Departements.html">
+                Departments <br/>
             </a>
         <div class="dropdown-content">
          <ul>
-            <li><a href="/dep=marketing">Marketing & PR</a></li>
-            <li><a href="/dep=customer">Customer Success & Sales</a></li>
-            <li><a href="/dep=it">IT, Product, Data</a></li>
-            <li><a href="/dep=finance">Finance & Administration</a></li>
-            <li><a href="/dep=hr">HR & more</a></li>
+            <li><a href="/departement?marting">Marketing & PR</a></li>
+            <li><a href="/departemet?customer">Customer Success & Sales</a></li>
+            <li><a href="/departement?it">IT, Product, Data</a></li>
+            <li><a href="/departement?finance">Finance & Administration</a></li>
+            <li><a href="/departement?hr">HR & more</a></li>
         </ul>
          </div>
          </li>
          </ul>
-       </div>
-             </nav>
+        </nav>
+        </div>   
             </header>
             <section class="logo-section-container">
-                <img class="logo" src="res/logo.png" width="35" height="35">
+                <img class="logo" src="res\logo.png"  width="40" height="35">
                 <h1>
                     Making the healthcare experience more human
                 </h1>
+             
                 <div class="grid">
                     <div class="col-2">
                         <p>
-                            We want patients to find the perfect doctor and book an appointment in the most easy way.
-                            The patient journey should be enjoyable, and that's why we are always next to them:
-                             to help them find the best possible care. Anytime, anywhere.
+                            We want patients to find the perfect doctor and book an appointment 
+                            in the most easy way.The patient journey should be enjoyable, and that's why we are always next to them:
+                            to help them find the best possible care. Anytime, anywhere.
                         </p>
                     </div>
                     <div class="col-2">
@@ -57,13 +66,10 @@
                     </div>
                 </div>
             </section>
-        </a>
-    </div>
-</section>
-<section class="services-container">
+<section class="services-section">
     <div class="grid for-patient">
-        <div class="col-3">
-            <div class="services_item services_item--marketplace">
+        <div class="col-3 fade_visible ">
+            <div class="services_item--marketplace ">
                 <div>
                 <img src="https://www.docplanner.com/icons/icon-patients.svg"/>
                 <h1>For patients</h1>
@@ -91,13 +97,14 @@
         </div>
     </div>
     <div class="col-3">
-        <div class="services_item services">
+        <div class="services_item services_item-sas">
             <div>
             <img src="https://www.docplanner.com/icons/icon-doctors.svg"/>
             <h1>For doctors</h1>
-            <h2>Save time managing visits and cut no-shows by half</h2>
+            <h2>
+                Save time managing visits and cut no-shows by half
+            </h2>
             </div>
-        
         <div class="style-select">
         <select data-id="domain-switcher">
                     <option>Choose country</option>
@@ -119,7 +126,7 @@
         </div>
     </div>
     <div class="col-3">
-        <div class="services_item services_item--clinics">
+        <div class="services_item services_item-clinics">
             <div>
             <img src="https://www.docplanner.com/icons/icon-clinics.svg"/>
             <h1>For clinics</h1>
@@ -253,102 +260,87 @@
 </div>
 </div>
 </section>
-<section class="offices section">
+<section class="offices_section">
     <header class="offices_header">
         <h1>
             Improve the lives of millions.
-            Change&nbsp;yours forever
+            Change & nbsp;yours forever
         </h1>
         <p>
-            More than 1400 team mates share our same vision, goals and passion. With offices in Warsaw, Barcelona, Istanbul, Rome, Bologna, Mexico City and Curitiba, our search for great talent never stops.
+            More than 1400 team mates share our same vision, goals and passion. <br>
+             With offices in Warsaw, Barcelona, Istanbul, Rome, Bologna, Mexico City
+              <br> and Curitiba, our search for great talent never stops.
         </p>
     </header>
-    <div class="offices-slider">
-        <div class="office_col_1">
-<a href="/career?&loc=poland#jobs-offers" class="office">
-    <figure class="office_image">
-        <img scr="https://www.docplanner.com/images/warsaw.png" srcset="https://www.docplanner.com/images/warsaw.png 1x, https://www.docplanner.com/images/warsaw@2x.png 2x"/>
-    </figure>
-    <div class="office_desc">
-        Warsaw
-        <span class="btn">See openings</span>
-    </div>
-</a>
-</div>
-                <div class="office">
-        <a href="/career?&loc=spain#jobs-offers" class="office">
-            <figure class="office__image">
-                <img scr="https://www.docplanner.com/images/barcelona.png" srcset="https://www.docplanner.com/images/barcelona.png 1x, https://www.docplanner.com/images/barcelona@2x.png 2x"/>
-            </figure>
-            <div class="office__desc">
-                Barcelona
-                <span class="btn">See openings</span>
+
+<div class="offices">
+    <div class="offices-column-1">
+        <div class="offices-box">
+            <div class="offices-box-image">
+                <img src="https://www.docplanner.com/images/warsaw.png"/>
             </div>
-        </a>
-    </div>
-                <div class="office">
-        <a href="/career?&loc=rome#jobs-offers" class="office">
-            <figure class="office_image">
-                <img scr="https://www.docplanner.com/images/istanbul.png" srcset="https://www.docplanner.com/images/istanbul.png 1x, https://www.docplanner.com/images/istanbul@2x.png 2x"/>
-            </figure>
-            <div class="office_desc">
-                Istanbul
-                <span class="btn">See openings</span>
+                <h2>Warsaw</h2>
+            <div class="opening-office">
+            <input type="button"  value="see openings"/>
             </div>
-        </a>
-    </div>
-                <div class="office_col_2">
-        <a href="/career?&loc=italy#jobs-offers" class="office__inner">
-            <figure class="office_image">
-                <img scr="https://www.docplanner.com/images/rome.png" srcset="https://www.docplanner.com/images/rome.png 1x, https://www.docplanner.com/images/rome@2x.png 2x"/>
-            </figure>
-            <div class="office_desc">
-                Rome
-                <span class="btn">See openings</span>
-            </div>
-        </a>
-    </div>
-            <div class="office">
-                <a href="/career?&loc=italy#jobs-offers" class="office__inner">
-                    <figure class="office_image">
-                        <img scr="https://www.docplanner.com/images/bologna.png" srcset="https://www.docplanner.com/images/bologna.png 1x, https://www.docplanner.com/images/bologna@2x.png 2x"/>
-                    </figure>
-                    <div class="office_desc">
-                        Bologna
-                        <span class="btn">See openings</span>
-                    </div>
-                </a>
-            </div>
-            <div class="office">
-            <a href="/career?&loc=brazil#jobs-offers" class="office">
-                <figure class="office_image">
-                    <img scr="https://www.docplanner.com/images/curitiba.png" srcset="https://www.docplanner.com/images/curitiba.png 1x, https://www.docplanner.com/images/curitiba@2x.png 2x"/>
-                </figure>
-                <div class="office_desc">
-                    Curitiba
-                    <span class="btn">See openings</span>
-                </div>
-            </a>
         </div>
-                    <div class="office">
-            <a href="/career?&loc=mexico#jobs-offers" class="office">
-                <figure class="office_image">
-                    <img scr="https://www.docplanner.com/images/mexico-city.png" srcset="https://www.docplanner.com/images/mexico-city.png 1x, https://www.docplanner.com/images/mexico-city@2x.png 2x"/>
-                </figure>
-                <div class="office_desc">
-                    Mexico City
-                    <span class="btn">See openings</span>
-                </div>
-            </a>
-        </div>
+        <div class="offices-box">
+            <div class="offices-box-image">
+                <img src="https://www.docplanner.com/images/barcelona.png"/>
             </div>
+            <h2>Barcelona</h2>
+            <div class="opening-office">
+                <input type="button" value="see openings"/>
+            </div>
+        </div>
+        <div class="offices-box">
+                <div class="offices-box-image">
+                    <img src="https://www.docplanner.com/images/istanbul.png"/>
+                 </div>
+                     <h2>Istanbul</h2>
+                 <div class="opening-office">
+                     <input type="button" value="see openings"/>
+                 </div>
+        </div>
+    </div>   
+    <div class="offices-column-2">
+        <div class="offices-box">
+            <div class="offices-box-image">
+                <img src="https://www.docplanner.com/images/rome.png"/>
+            </div>
+                <h2>Rome</h2>
+            <div class="opening-office">
+                <input type="button" value="see openings"/>
+            </div>
+        </div>
+        <div class="offices-box">
+           <div class="offices-box-image">
+               <img src="https://www.docplanner.com/images/mexico-city.png"/>
+            </div>
+                <h2>Mexico city</h2>
+            <div class="opening-office">
+                <input type="button" value="see openings"/>
+            </div>
+        </div>
+        <div class="offices-box">
+            <div class="offices-box-image">
+                <img src="https://www.docplanner.com/images/curitiba.png"/>
+            </div>
+                <h2>Curitiba</h2>
+            <div class="opening-office">
+                <input type="button" value="see openings"/>                             
+               </div>
+            </div>
+    </div>
+</div>                    
 </section>
             <section class="join-us section">
                 <header class="join-us-header">
                     <h1>
                         Sounds interesting? Join us now!
                     </h1>
-                    <a href="/career" class="btn">See all current openings</a>
+
+                    <a href="carrer.html"class="button">See all current openings</a>
                 </header>
             </section>
         
